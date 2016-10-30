@@ -1,0 +1,65 @@
+$main-background: #cec2c2;
+$button-background: #019DAA;
+$faded-background: rgba(255,255,255,0.4);
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+@mixin light-font {
+  font-family: helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+h1{
+  font-size: 50px;
+  margin: 20px;
+}
+.app-container{
+  text-align: center;
+  margin-top: 80px;
+}
+
+button{
+  border: none;
+  background-color: teal;
+  color: white;
+  margin: 10px;
+  height: 30px;
+  width: 100px;
+}
+.user-input-field{
+  margin: 20px auto 20px auto;
+  display: block;
+  font-size: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.last-guess{
+  font-size: 50px;
+  margin: 10px;
+}
+
+.min-max-wrapper{
+  margin: 0 20% 0 20%;
+  border: 2px solid teal;
+}
+
+.current-range{
+  margin: 20px;
+}
+.set-range-button{
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+@mixin headerFonts{
+  font-size: 35px;
+  border-bottom: 1px dashed purple;
+  font-weight: bold;
+  color: teal;
+}
+
+body {
+  @include light-font;
+}
