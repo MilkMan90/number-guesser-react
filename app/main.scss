@@ -27,11 +27,24 @@ button{
   height: 30px;
   width: 100px;
 }
+
+button:hover{
+  background-color: darken(teal, 10);
+  cursor: pointer;
+}
+
 .user-input-field{
   margin: 20px auto 20px auto;
   display: block;
   font-size: 20px;
   width: 200px;
+  text-align: center;
+}
+
+.min-input-field, .max-input-field{
+  margin: 20px;
+  font-size: 18px;
+  width: 150px;
   text-align: center;
 }
 

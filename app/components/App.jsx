@@ -30,9 +30,9 @@ class App extends Component {
         } else if ( guess < this.state.randomNumber) {
           this.setState({gameStatus: 'higher'})
         } else {
-          this.setState({gameStatus: 'won'})
+          this.setState({gameStatus: 'won', lastGuess: ''})
           this.increaseMinMax();
-          this.resetGame();
+          this.generateRandomNumber();
         }
     } else{
       this.setState({gameStatus: 'invalid'})
@@ -49,6 +49,7 @@ class App extends Component {
   }
   resetGame(){
     this.generateRandomNumber();
+    this.setState({gameStatus: 'new', lastGuess: ''})
   }
   render() {
     console.log(this.state.randomNumber);
